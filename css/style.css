@@ -2514,6 +2514,10 @@ p.personal-data input[type=checkbox]:checked+label:before {
     }
 }
 
+.active-block {
+    display: block !important;
+}
+
 @media only screen and (max-width:580px) {
     header .head-main .right {
         -ms-flex-wrap: wrap;

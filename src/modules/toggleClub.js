@@ -10,7 +10,7 @@ const toggleClub = (e) => {
         }
 
     })
-    console.log(toggleBtn)
+
 }
 
 export default toggleClub;

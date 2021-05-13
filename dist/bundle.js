@@ -38,7 +38,18 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_toggleClub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/toggleClub */ \"./src/modules/toggleClub.js\");\n\n(0,_modules_toggleClub__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n//# sourceURL=webpack://Fitness-Body/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_toggleClub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/toggleClub */ \"./src/modules/toggleClub.js\");\n/* harmony import */ var _modules_popupVisit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/popupVisit */ \"./src/modules/popupVisit.js\");\n\n\n(0,_modules_toggleClub__WEBPACK_IMPORTED_MODULE_0__.default)();\n(0,_modules_popupVisit__WEBPACK_IMPORTED_MODULE_1__.default)();\n\n//# sourceURL=webpack://Fitness-Body/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/popupVisit.js":
+/*!***********************************!*\
+  !*** ./src/modules/popupVisit.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar popupVisit = function popupVisit(e) {\n  var visitFormBtn = document.querySelector('.open-popup');\n  var callBackForm = document.querySelector('#callback_form');\n  var freeVisitForm = document.querySelector('#free_visit_form');\n  var thanksBlock = document.getElementById('thanks');\n  var body = document.querySelector('body');\n\n  var visitForm = function visitForm(e) {\n    var target = e.target;\n\n    if (target.matches('.free-visit>p>a')) {\n      // при клике по надписи \"записаться на бесплатный визит\" открывается модальное окно\n      freeVisitForm.style.display = 'block';\n    } else if (target.matches('.overlay, .close_icon')) {\n      // при клике на подложку или крестик - модальное окно закрывается\n      freeVisitForm.style.display = 'none';\n    }\n\n    if (target.matches('.callback-btn')) {\n      callBackForm.style.display = 'block';\n    } else if (target.matches('.overlay, .close_icon, .close-btn')) {\n      callBackForm.style.display = 'none';\n      thanksBlock.style.display = 'none';\n    }\n  };\n\n  body.addEventListener('click', visitForm);\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (popupVisit);\n\n//# sourceURL=webpack://Fitness-Body/./src/modules/popupVisit.js?");
 
 /***/ }),
 
@@ -49,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar toggleClub = function toggleClub(e) {\n  var toggleBtn = document.querySelector('.club-select');\n  var clubItems = document.querySelector('.club-items');\n  toggleBtn.addEventListener('click', function () {\n    if (getComputedStyle(clubItems).display == 'none') {\n      clubItems.style.display = 'block';\n    } else {\n      clubItems.style.display = 'none';\n    }\n  });\n  console.log(toggleBtn);\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toggleClub);\n\n//# sourceURL=webpack://Fitness-Body/./src/modules/toggleClub.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar toggleClub = function toggleClub(e) {\n  var toggleBtn = document.querySelector('.club-select');\n  var clubItems = document.querySelector('.club-items');\n  toggleBtn.addEventListener('click', function () {\n    if (getComputedStyle(clubItems).display == 'none') {\n      clubItems.style.display = 'block';\n    } else {\n      clubItems.style.display = 'none';\n    }\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toggleClub);\n\n//# sourceURL=webpack://Fitness-Body/./src/modules/toggleClub.js?");
 
 /***/ }),
 
