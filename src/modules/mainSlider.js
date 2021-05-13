@@ -9,7 +9,7 @@ const mainSlider = () => {
         slides[currentSlide].style.display = 'none';
         currentSlide++
 
-        if (currentSlide > slides.length) {
+        if (currentSlide >= slides.length) {
             currentSlide = 0;
         }
         slides[currentSlide].style.display = 'flex';
