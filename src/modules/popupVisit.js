@@ -1,7 +1,7 @@
 const popupVisit = (e) => {
     const visitFormBtn = document.querySelector('.open-popup');
-    const callBackForm = document.querySelector('#callback_form')
-    const freeVisitForm = document.querySelector('#free_visit_form');
+    const callBackForm = document.querySelector('#callback_form'); //модальное окно с формой для обратного звонка
+    const freeVisitForm = document.querySelector('#free_visit_form'); //модальное окно с формой для записи на посещение
     const thanksBlock = document.getElementById('thanks');
     const body = document.querySelector('body');
 
@@ -16,8 +16,10 @@ const popupVisit = (e) => {
         }
 
         if (target.matches('.callback-btn')) {
+            // при клике на кнопку "перезвоните мне" открывается модальное окно
             callBackForm.style.display = 'block'
         } else if (target.matches('.overlay, .close_icon, .close-btn')) {
+            // при клике на подложку или крестик - модальное окно закрывается
             callBackForm.style.display = 'none';
             thanksBlock.style.display = 'none';
         }
