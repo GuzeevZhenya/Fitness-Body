@@ -1,14 +1,14 @@
 const toggleClub = (e) => {
-    const toggleBtn = document.querySelector('.club-select');
-    const clubItems = document.querySelector('.club-items')
+    const clubItems = document.querySelector('.club-items');
+    const body = document.querySelector('body');
 
-    toggleBtn.addEventListener('click', () => {
-        if (getComputedStyle(clubItems).display == 'none') {
+    body.addEventListener('click', (e) => {
+        let target = e.target;
+        if (target.matches('.clubs-list>p') && clubItems.style.display == 'none') {
             clubItems.style.display = 'block';
         } else {
             clubItems.style.display = 'none';
         }
-
     })
 
 }
