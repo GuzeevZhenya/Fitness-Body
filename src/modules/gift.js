@@ -10,7 +10,7 @@ const gift = () => {
                 console.log(1)
                 gift.style.display = 'block';
                 giftImg.style.display = 'none'
-            } else if (target.matches('.overlay,.close_icon')) {
+            } else if (target.matches('.overlay,.close_icon,.close-btn')) {
                 gift.style.display = 'none';
             }
         })

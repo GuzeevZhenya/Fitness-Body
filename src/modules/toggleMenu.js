@@ -7,7 +7,7 @@ const toggleMenu = () => {
     })
     popupMenu.addEventListener('click', (e) => {
         let target = e.target;
-        if (target.matches('.close-menu-btn img, .scroll a, .popup-menu')) {
+        if (target.matches('.close-menu-btn img, .scroll a')) {
             popupMenu.style.display = 'none';
         }
     })
