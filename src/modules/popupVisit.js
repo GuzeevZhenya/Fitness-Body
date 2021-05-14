@@ -1,5 +1,4 @@
 const popupVisit = (e) => {
-    const visitFormBtn = document.querySelector('.open-popup');
     const callBackForm = document.querySelector('#callback_form'); //модальное окно с формой для обратного звонка
     const freeVisitForm = document.querySelector('#free_visit_form'); //модальное окно с формой для записи на посещение
     const thanksBlock = document.getElementById('thanks');
