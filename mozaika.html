@@ -8,9 +8,10 @@
     <title>Сеть фитнес клубов Тело - Мозаика</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
     <script src="dist/bundle.js" defer></script>
 </head>
 
@@ -333,18 +334,25 @@
                     <div class="slide">
                         <img src="images/gallery/photo1.jpg" alt="">
                     </div>
-                    <div class="slide">
+                    <div class="slide" style="display: none">
                         <img src="images/gallery/photo2.jpg" alt="">
                     </div>
-                    <div class="slide">
+                    <div class="slide" style="display: none">
                         <img src="images/gallery/photo3.jpg" alt="">
                     </div>
-                    <div class="slide">
+                    <div class="slide" style="display: none">
                         <img src="images/gallery/photo4.jpg" alt="">
                     </div>
-                    <div class="slide">
+                    <div class="slide" style="display: none">
                         <img src="images/gallery/photo5.jpg" alt="">
                     </div>
+                    <div class="slider-arrow prev">
+                        <span id="gallery-arrow-left"><img src="images/arrow-left.png" alt="" /></span>
+                    </div>
+                    <div class="slider-arrow next">
+                        <span id="gallery-arrow-right"><img src="images/arrow-right.png" alt="" /></span>
+                    </div>
+                    <ul class="slider-dots"></ul>
                 </div>
             </div>
         </div>
