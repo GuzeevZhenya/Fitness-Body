@@ -6,8 +6,8 @@ import toggleMenu from './modules/toggleMenu'
 import photoSliders from './modules/photoSliders'
 import scrollingPage from './modules/scrollingPage';
 import carousel from './modules/sliderCarousel';
-
-
+import maskPhone from './modules/maskPhone';
+import sendForm from './modules/sendForm';
 
 toggleClub();
 popupVisit();
@@ -18,3 +18,8 @@ photoSliders();
 scrollingPage();
 //Слайдер карусель
 carousel.init();
+//Маска для инпутов с телефоном
+maskPhone('[name=phone]');
+
+//Отправка форм
+sendForm();
