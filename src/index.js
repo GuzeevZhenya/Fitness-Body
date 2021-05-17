@@ -8,6 +8,7 @@ import scrollingPage from './modules/scrollingPage';
 import carousel from './modules/sliderCarousel';
 import maskPhone from './modules/maskPhone';
 import sendForm from './modules/sendForm';
+import calculator from './modules/calculator';
 
 toggleClub();
 popupVisit();
@@ -23,3 +24,4 @@ maskPhone('[name=phone]');
 
 //Отправка форм
 sendForm();
+calculator();
