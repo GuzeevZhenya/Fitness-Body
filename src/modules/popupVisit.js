@@ -14,7 +14,7 @@ const popupVisit = (e) => {
             freeVisitForm.style.display = 'none';
         }
 
-        if (target.matches('.callback-btn')) {
+        if (target.matches('.right>.call>.callback-btn')) {
             // при клике на кнопку "перезвоните мне" открывается модальное окно
             callBackForm.style.display = 'block'
         } else if (target.matches('.overlay, .close_icon, .close-btn')) {
