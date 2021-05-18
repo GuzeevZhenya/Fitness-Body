@@ -124,6 +124,7 @@ const sendForm = () => {
       }, 3000);
     };
   let formWrapper = document.querySelector('#callback_form');
+  let freeVisitForm = document.querySelector('#free_visit_form');
 
   alertBlock.style.cssText = `
     color: red;
@@ -186,7 +187,7 @@ const sendForm = () => {
 
       if (target.matches('#footer_form, #card_order, #banner-form, #form1, #form2')) {
         thanksBlock.style.display = 'block';
-        formWrapper.style.display = 'none';
+       
         message.innerHTML = loadMessage;
         const formData = new FormData(target);
         const body = {};
@@ -207,7 +208,8 @@ const sendForm = () => {
 
         const statusMessageRemove = () => {
            thanksBlock.style.display = 'none';
-          
+           formWrapper.style.display = 'none';
+           freeVisitForm.style.display = 'none';
         };
 
         setTimeout(statusMessageRemove, 1000);
