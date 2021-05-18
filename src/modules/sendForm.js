@@ -117,11 +117,13 @@ const sendForm = () => {
     input = document.querySelectorAll('form input'),
     inputLetoMozaika = document.getElementById('footer_leto_mozaika'),
     inputLetoShelkovo = document.getElementById('footer_leto_schelkovo'),
+    
     clearAlertBlock = () => {
       setTimeout(() => {
         alertBlock.textContent = '';
       }, 3000);
     };
+  let formWrapper = document.querySelector('#callback_form');
 
   alertBlock.style.cssText = `
     color: red;
@@ -184,6 +186,7 @@ const sendForm = () => {
 
       if (target.matches('#footer_form, #card_order, #banner-form, #form1, #form2')) {
         thanksBlock.style.display = 'block';
+        formWrapper.style.display = 'none';
         message.innerHTML = loadMessage;
         const formData = new FormData(target);
         const body = {};
@@ -203,8 +206,8 @@ const sendForm = () => {
         };
 
         const statusMessageRemove = () => {
-          thanksBlock.style.display = 'none';
-          document.querySelector('#callback_form').style.display = 'none';
+           thanksBlock.style.display = 'none';
+          
         };
 
         setTimeout(statusMessageRemove, 1000);
