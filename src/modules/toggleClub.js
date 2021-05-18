@@ -6,7 +6,7 @@ const toggleClub = (e) => {
         let target = e.target;
         if (target.matches('.clubs-list>p') && clubItems.style.display == 'none') {
             clubItems.style.display = 'block';
-        } else {
+        } else if (target.matches('.clubs-list>p')  ) {
             clubItems.style.display = 'none';
         }
     })

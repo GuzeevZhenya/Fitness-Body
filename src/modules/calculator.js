@@ -1,6 +1,6 @@
 const calculator = () => {
 	let priceTotal = document.querySelector('#price-total');
-	const calculatorBlock = document.querySelector('#card_order');
+	const calculatorBlock = document.querySelector('.calculator');
 	const inputPromocode = document.querySelector('#promocode');
 
 	const clubsPrices = {

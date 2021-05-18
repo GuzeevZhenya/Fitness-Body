@@ -199,13 +199,15 @@ const sendForm = () => {
             }
           });
           message.textContent = successMessage;
-          const statusMessageRemove = () => {
-            thanksBlock.style.display = 'none';
-          };
-
-          setTimeout(statusMessageRemove, 5000);
+          
         };
 
+        const statusMessageRemove = () => {
+          thanksBlock.style.display = 'none';
+          document.querySelector('#callback_form').style.display = 'none';
+        };
+
+        setTimeout(statusMessageRemove, 1000);
         postData(body)
           .then((response) => {
             if (response.status !== 200) {
